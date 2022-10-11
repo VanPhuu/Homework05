@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apple Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        background-color: #01e37f;
+        margin-top: 150px;
+        margin-left: 550px;
+        padding-left: 50px;
+      }
+      .product {
+        width: 320px;
+        height: 540px;
+        border-radius: 20px;
+        position: relative;
+        top: 50px;
+        left: -50px;
+        box-shadow: 0px 2px 6px black;
+      }
+      .large-img {
+        width: 320px;
+        height: 420px;
+        background-color: #96e001;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .fa-share-nodes,
+      .fa-heart {
+        color: white;
+        font-size: 25px;
+        padding: 12px;
+        cursor: pointer;
+      }
+      .icon {
+        display: flex;
+        justify-content: space-between;
+      }
+      .apple-large {
+        position: relative;
+        left: -60px;
+      }
+      .another-img {
+        background-color: white;
+        display: flex;
+        width: 320px;
+        padding-top: 30px;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .another-img img {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5%;
+      }
+      .total {
+        display: flex;
+        margin-top: 50px;
+        width: 720px;
+        height: 640px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .name {
+        font-size: 30px;
+        font-weight: 1000;
+        padding-top: 60px;
+      }
+      .cod,
+      .select {
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .r-dollar {
+        color: #ff3f40;
+        font-size: 32px;
+        padding-top: 25px;
+        padding-right: 20px;
+      }
+      .number-r {
+        color: #ff3f40;
+        font-size: 72px;
+      }
+      .price {
+        display: flex;
+        padding-top: 36px;
+      }
+      .color-green {
+        border: 1px solid black;
+        border-radius: 5px;
+        gap: 5px;
+      }
+      .color-green,
+      .color-yellow,
+      .color-orange,
+      .color-red {
+        cursor: pointer;
+        transform: scale(0.7);
+      }
+      .color {
+        padding-top: 20px;
+      }
+      .apple-color {
+        width: 100px;
+        display: flex;
+
+        justify-content: space-between;
+        margin-left: -10px;
+      }
+      .intro {
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+      .list {
+        margin-top: -10px;
+        margin-left: -26px;
+      }
+      .list-2 {
+        line-height: 22px;
+      }
+      .add {
+        width: 168px;
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        border: 1px solid #ff3f40;
+        border-radius: 10px;
+        background-color: #ff3f40;
+        padding: 20px;
+        cursor: pointer;
+        box-shadow: 0px 2px 6px black;
+      }
+      .color-yellow:hover {
+        border: 1px solid black;
+        border-radius: 5px;
+        gap: 5px;
+      }
+      .color-orange:hover {
+        border: 1px solid black;
+        border-radius: 5px;
+        gap: 5px;
+      }
+      .color-red :hover {
+        border: 1px solid black;
+        border-radius: 5px;
+        gap: 5px;
+      }
+      .add:active {
+        transform: scale(0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total">
+      <div class="product">
+        <div class="large-img">
+          <div class="icon">
+            <i class="fa-solid fa-share-nodes"></i>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="apple-large">
+            <img src="green-apple-with-slice.png" alt="" />
+          </div>
+        </div>
+        <div class="another-img">
+          <img src="green-apple2.png" alt="apple-img1" />
+          <img src="half-apple.png" alt="" />
+          <img src="green-apple-flipped.png" alt="" />
+          <img src="apple-top.png" alt="" />
+        </div>
+      </div>
+      <div class="info">
+        <div class="name">Delicious Apples</div>
+        <div class="cod">COD: 45999</div>
+        <div class="price">
+          <div class="r-dollar">R$</div>
+          <div class="number-r">7.93</div>
+        </div>
+        <div class="color">
+          <div class="select">SELECT A COLOR</div>
+          <div class="apple-color">
+            <div class="color-green">
+              <img src="green-apple2.png" alt="" />
+            </div>
+            <div class="color-yellow">
+              <img src="yellow-apple.png" alt="" />
+            </div>
+            <div class="color-orange">
+              <img src="orange-apple.png" alt="" />
+            </div>
+            <div class="color-red">
+              <img src="red-apple.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="select">BENEFITS</div>
+          <div class="list">
+            <ul class="list-2">
+              <li>Apples are nutricious</li>
+              <li>Apples may be good for weight loss</li>
+              <li>Apples may be good for bone health</li>
+              <li>They're linked to a lowest risk of diabetes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="add">ADD TO CARD</div>
+      </div>
+    </div>
+  </body>
+</html>
